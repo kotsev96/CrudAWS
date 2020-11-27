@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>Create user</title>
+</head>
+<body>
+<form action="#" th:action="@{/film-update}" th:object="${film}" method="post">
+    <label for="id">ID</label>
+    <input readonly type="number" th:field="*{id}" id="id" placeholder="ID">
+    <br/>
+    <label for="name">Name</label>
+    <input type="text" th:field="*{name}" id="name" placeholder="Name">
+    <br/>
+    <label for="director">Director</label>
+    <input type="text" th:field="*{director}" id="director" placeholder="Director">
+    <br/>
+    <br/>
+    <label for="budget">Budget</label>
+    <input type="text" th:field="*{budget}" id="budget" placeholder="Budget">
+    <br/>
+    <br/>
+    <label for="genre">Genre</label>
+    <input type="text" th:field="*{genre}" id="genre" placeholder="Budget">
+    <br/>
+    <br/>
+    <label for="rating">Rating</label>
+    <input type="text" th:field="*{rating}" id="rating" placeholder="Rating">
+    <br/>
+    <input type="submit" value="Редактировать">
+</form>
+</body>
+</html>

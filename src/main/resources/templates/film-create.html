@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" >
+<head>
+    <meta charset="UTF-8">
+    <title>Добавить фильм</title>
+</head>
+<body>
+<form action="#" th:action="@{/film-create}" th:object="${film}" method="post">
+    <label for="name">Name</label>
+    <input type="text" th:field="*{name}" id="name" placeholder="Name">
+    <label for="director">Director</label>
+    <input type="text" th:field="*{director}" id="director" placeholder="Director">
+    <label for="budget">Budget</label>
+    <input type="text" th:field="*{budget}" id="budget" placeholder="Budget">
+    <label for="genre">Genre</label>
+    <input type="text" th:field="*{genre}" id="genre" placeholder="Genre">
+    <label for="rating">Rating</label>
+    <input type="text" th:field="*{rating}" id="rating" placeholder="Rating">
+
+
+    <input type="submit" value="Добавить фильм">
+</form>
+
+</body>
+</html>
